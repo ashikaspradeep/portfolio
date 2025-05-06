@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Ashika | Portfolio</title>
     <link rel="stylesheet" href="style.css">
@@ -19,7 +21,8 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
+                
+    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i></ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
@@ -110,7 +113,7 @@
                     <P>Developed a predictive model to inspect public property crime data from different machine
                         learning
                         algorithms. Showed that LSTM performed better compared to other models in terms of accuracy.</P>
-<!--                     <a href="#">Learn more</a> -->
+                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-hospital"></i>
@@ -122,14 +125,14 @@
                         matching, and an admin dashboard for user verification and match tracking. It streamlines the
                         donation
                         process, improves transparency, and supports life-saving organ transplants.</P>
-<!--                     <a href="#">Learn more</a> -->
+                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-prescription-bottle-medical"></i>
                     <h2>MediZone - Online Medical Shop</h2>
                     <P>Developed an online platform for buying medicines and healthcare products online. Used HTML, CSS,
                         JavaScript for frontend and Python, Django, and MySQL for backend development.</P>
-<!--                     <a href="#">Learn more</a> -->
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -219,6 +222,19 @@
     })
   </script>
 
+
+
+<script>
+  let sidemenu = document.getElementById("sidemenu");
+
+  function openMenu() {
+    sidemenu.style.right = "0";
+  }
+
+  function closeMenu() {
+    sidemenu.style.right = "-200px";
+  }
+</script>
 
 </body>
 
